@@ -16,9 +16,9 @@ function ProjectsPage() {
     }, [id])
 
     return (
-        <div key={1}>
+        <div key={1} className={`Projects + ${theme}`}>
             {project && (
-                <div className="container-fluid d-flex flex-column align-items-center text-center">
+                <div className={`container-fluid d-flex flex-column align-items-center text-center`}>
                     <h1 className="display-1 m-4 fw-bold" style={{ letterSpacing: '-4px' }}>{project.name}</h1>
 
                     <div className="d-flex pt-3 mb-5">
@@ -43,7 +43,7 @@ function ProjectsPage() {
                         {project.all_skills.map((oneSkill, index) => {
                             return (
                                 <div key={index} className="col col-xs-2 align-items-center justify-content-center m-2">
-                                    <div className={`skill-card fs-5 fw-bold p-3 ${theme === 'dark' ? 'bg-white text-black' : ''}`}>
+                                    <div className={`skill-card fs-5 fw-bold p-3 ${theme === 'dark' ? 'bg-white' : 'bg-dark'} ${theme === 'dark' ? 'text-black' : 'text-white'}`}>
                                         {oneSkill}
                                     </div>
                                 </div>
