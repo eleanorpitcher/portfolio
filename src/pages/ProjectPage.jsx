@@ -35,7 +35,6 @@ function ProjectsPage() {
                     <p className='mx-5 px-5'>{project.description}</p>
 
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        <p>IMAGE</p>
                         <img src={project.img} alt="" style={{ width: '60vw', borderRadius: '20px' }} />
                     </div>
 
