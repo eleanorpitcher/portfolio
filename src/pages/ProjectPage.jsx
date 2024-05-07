@@ -33,7 +33,7 @@ function ProjectsPage() {
                     </div>
 
                     <p className='mx-5 px-5'>{project.description}</p>
-
+                    {console.log(project.img)}
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
                         <img src={project.img} alt="" style={{ width: '60vw', borderRadius: '20px' }} />
                     </div>
